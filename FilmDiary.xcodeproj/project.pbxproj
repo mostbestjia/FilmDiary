@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D2C2F31723C15A00473AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C2F21723C15A00473AFC /* UIKit.framework */; };
+		00D2C2F51723C15A00473AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C2F41723C15A00473AFC /* Foundation.framework */; };
+		00D2C2F71723C15A00473AFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C2F61723C15A00473AFC /* CoreGraphics.framework */; };
+		00D2C2FD1723C15A00473AFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C2FB1723C15A00473AFC /* InfoPlist.strings */; };
+		00D2C2FF1723C15A00473AFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C2FE1723C15A00473AFC /* main.m */; };
+		00D2C3031723C15A00473AFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C3021723C15A00473AFC /* AppDelegate.m */; };
+		00D2C3051723C15A00473AFC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3041723C15A00473AFC /* Default.png */; };
+		00D2C3071723C15A00473AFC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3061723C15A00473AFC /* Default@2x.png */; };
+		00D2C3091723C15A00473AFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3081723C15A00473AFC /* Default-568h@2x.png */; };
+		00D2C30C1723C15A00473AFC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C30B1723C15A00473AFC /* RootViewController.m */; };
+		00D2C30F1723C15A00473AFC /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C30E1723C15A00473AFC /* DataViewController.m */; };
+		00D2C3121723C15A00473AFC /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C3111723C15A00473AFC /* ModelController.m */; };
+		00D2C3151723C15A00473AFC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3131723C15A00473AFC /* MainStoryboard_iPhone.storyboard */; };
+		00D2C3181723C15A00473AFC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3161723C15A00473AFC /* MainStoryboard_iPad.storyboard */; };
+		00D2C3201723C15A00473AFC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C31F1723C15A00473AFC /* SenTestingKit.framework */; };
+		00D2C3211723C15A00473AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C2F21723C15A00473AFC /* UIKit.framework */; };
+		00D2C3221723C15A00473AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00D2C2F41723C15A00473AFC /* Foundation.framework */; };
+		00D2C32A1723C15A00473AFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00D2C3281723C15A00473AFC /* InfoPlist.strings */; };
+		00D2C32D1723C15A00473AFC /* FilmDiaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D2C32C1723C15A00473AFC /* FilmDiaryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00D2C3231723C15A00473AFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00D2C2E71723C15A00473AFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00D2C2EE1723C15A00473AFC;
+			remoteInfo = FilmDiary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D2C2EF1723C15A00473AFC /* FilmDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D2C2F21723C15A00473AFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00D2C2F41723C15A00473AFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00D2C2F61723C15A00473AFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00D2C2FA1723C15A00473AFC /* FilmDiary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilmDiary-Info.plist"; sourceTree = "<group>"; };
+		00D2C2FC1723C15A00473AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00D2C2FE1723C15A00473AFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00D2C3001723C15A00473AFC /* FilmDiary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilmDiary-Prefix.pch"; sourceTree = "<group>"; };
+		00D2C3011723C15A00473AFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00D2C3021723C15A00473AFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00D2C3041723C15A00473AFC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		00D2C3061723C15A00473AFC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		00D2C3081723C15A00473AFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		00D2C30A1723C15A00473AFC /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		00D2C30B1723C15A00473AFC /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		00D2C30D1723C15A00473AFC /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		00D2C30E1723C15A00473AFC /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		00D2C3101723C15A00473AFC /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		00D2C3111723C15A00473AFC /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		00D2C3141723C15A00473AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		00D2C3171723C15A00473AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		00D2C31E1723C15A00473AFC /* FilmDiaryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmDiaryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00D2C31F1723C15A00473AFC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		00D2C3271723C15A00473AFC /* FilmDiaryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FilmDiaryTests-Info.plist"; sourceTree = "<group>"; };
+		00D2C3291723C15A00473AFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00D2C32B1723C15A00473AFC /* FilmDiaryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilmDiaryTests.h; sourceTree = "<group>"; };
+		00D2C32C1723C15A00473AFC /* FilmDiaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilmDiaryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00D2C2EC1723C15A00473AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C2F31723C15A00473AFC /* UIKit.framework in Frameworks */,
+				00D2C2F51723C15A00473AFC /* Foundation.framework in Frameworks */,
+				00D2C2F71723C15A00473AFC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D2C31A1723C15A00473AFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C3201723C15A00473AFC /* SenTestingKit.framework in Frameworks */,
+				00D2C3211723C15A00473AFC /* UIKit.framework in Frameworks */,
+				00D2C3221723C15A00473AFC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00D2C2E61723C15A00473AFC = {
+			isa = PBXGroup;
+			children = (
+				00D2C2F81723C15A00473AFC /* FilmDiary */,
+				00D2C3251723C15A00473AFC /* FilmDiaryTests */,
+				00D2C2F11723C15A00473AFC /* Frameworks */,
+				00D2C2F01723C15A00473AFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00D2C2F01723C15A00473AFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C2EF1723C15A00473AFC /* FilmDiary.app */,
+				00D2C31E1723C15A00473AFC /* FilmDiaryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00D2C2F11723C15A00473AFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C2F21723C15A00473AFC /* UIKit.framework */,
+				00D2C2F41723C15A00473AFC /* Foundation.framework */,
+				00D2C2F61723C15A00473AFC /* CoreGraphics.framework */,
+				00D2C31F1723C15A00473AFC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00D2C2F81723C15A00473AFC /* FilmDiary */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C3011723C15A00473AFC /* AppDelegate.h */,
+				00D2C3021723C15A00473AFC /* AppDelegate.m */,
+				00D2C30A1723C15A00473AFC /* RootViewController.h */,
+				00D2C30B1723C15A00473AFC /* RootViewController.m */,
+				00D2C30D1723C15A00473AFC /* DataViewController.h */,
+				00D2C30E1723C15A00473AFC /* DataViewController.m */,
+				00D2C3101723C15A00473AFC /* ModelController.h */,
+				00D2C3111723C15A00473AFC /* ModelController.m */,
+				00D2C3131723C15A00473AFC /* MainStoryboard_iPhone.storyboard */,
+				00D2C3161723C15A00473AFC /* MainStoryboard_iPad.storyboard */,
+				00D2C2F91723C15A00473AFC /* Supporting Files */,
+			);
+			path = FilmDiary;
+			sourceTree = "<group>";
+		};
+		00D2C2F91723C15A00473AFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C2FA1723C15A00473AFC /* FilmDiary-Info.plist */,
+				00D2C2FB1723C15A00473AFC /* InfoPlist.strings */,
+				00D2C2FE1723C15A00473AFC /* main.m */,
+				00D2C3001723C15A00473AFC /* FilmDiary-Prefix.pch */,
+				00D2C3041723C15A00473AFC /* Default.png */,
+				00D2C3061723C15A00473AFC /* Default@2x.png */,
+				00D2C3081723C15A00473AFC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00D2C3251723C15A00473AFC /* FilmDiaryTests */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C32B1723C15A00473AFC /* FilmDiaryTests.h */,
+				00D2C32C1723C15A00473AFC /* FilmDiaryTests.m */,
+				00D2C3261723C15A00473AFC /* Supporting Files */,
+			);
+			path = FilmDiaryTests;
+			sourceTree = "<group>";
+		};
+		00D2C3261723C15A00473AFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00D2C3271723C15A00473AFC /* FilmDiaryTests-Info.plist */,
+				00D2C3281723C15A00473AFC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00D2C2EE1723C15A00473AFC /* FilmDiary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D2C3301723C15A00473AFC /* Build configuration list for PBXNativeTarget "FilmDiary" */;
+			buildPhases = (
+				00D2C2EB1723C15A00473AFC /* Sources */,
+				00D2C2EC1723C15A00473AFC /* Frameworks */,
+				00D2C2ED1723C15A00473AFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmDiary;
+			productName = FilmDiary;
+			productReference = 00D2C2EF1723C15A00473AFC /* FilmDiary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00D2C31D1723C15A00473AFC /* FilmDiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00D2C3331723C15A00473AFC /* Build configuration list for PBXNativeTarget "FilmDiaryTests" */;
+			buildPhases = (
+				00D2C3191723C15A00473AFC /* Sources */,
+				00D2C31A1723C15A00473AFC /* Frameworks */,
+				00D2C31B1723C15A00473AFC /* Resources */,
+				00D2C31C1723C15A00473AFC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00D2C3241723C15A00473AFC /* PBXTargetDependency */,
+			);
+			name = FilmDiaryTests;
+			productName = FilmDiaryTests;
+			productReference = 00D2C31E1723C15A00473AFC /* FilmDiaryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00D2C2E71723C15A00473AFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Yingjia Liu";
+			};
+			buildConfigurationList = 00D2C2EA1723C15A00473AFC /* Build configuration list for PBXProject "FilmDiary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00D2C2E61723C15A00473AFC;
+			productRefGroup = 00D2C2F01723C15A00473AFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00D2C2EE1723C15A00473AFC /* FilmDiary */,
+				00D2C31D1723C15A00473AFC /* FilmDiaryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00D2C2ED1723C15A00473AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C2FD1723C15A00473AFC /* InfoPlist.strings in Resources */,
+				00D2C3051723C15A00473AFC /* Default.png in Resources */,
+				00D2C3071723C15A00473AFC /* Default@2x.png in Resources */,
+				00D2C3091723C15A00473AFC /* Default-568h@2x.png in Resources */,
+				00D2C3151723C15A00473AFC /* MainStoryboard_iPhone.storyboard in Resources */,
+				00D2C3181723C15A00473AFC /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D2C31B1723C15A00473AFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C32A1723C15A00473AFC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00D2C31C1723C15A00473AFC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00D2C2EB1723C15A00473AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C2FF1723C15A00473AFC /* main.m in Sources */,
+				00D2C3031723C15A00473AFC /* AppDelegate.m in Sources */,
+				00D2C30C1723C15A00473AFC /* RootViewController.m in Sources */,
+				00D2C30F1723C15A00473AFC /* DataViewController.m in Sources */,
+				00D2C3121723C15A00473AFC /* ModelController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00D2C3191723C15A00473AFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00D2C32D1723C15A00473AFC /* FilmDiaryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00D2C3241723C15A00473AFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00D2C2EE1723C15A00473AFC /* FilmDiary */;
+			targetProxy = 00D2C3231723C15A00473AFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00D2C2FB1723C15A00473AFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D2C2FC1723C15A00473AFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00D2C3131723C15A00473AFC /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D2C3141723C15A00473AFC /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		00D2C3161723C15A00473AFC /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D2C3171723C15A00473AFC /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		00D2C3281723C15A00473AFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00D2C3291723C15A00473AFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00D2C32E1723C15A00473AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00D2C32F1723C15A00473AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00D2C3311723C15A00473AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmDiary/FilmDiary-Prefix.pch";
+				INFOPLIST_FILE = "FilmDiary/FilmDiary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00D2C3321723C15A00473AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmDiary/FilmDiary-Prefix.pch";
+				INFOPLIST_FILE = "FilmDiary/FilmDiary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		00D2C3341723C15A00473AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FilmDiary.app/FilmDiary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmDiary/FilmDiary-Prefix.pch";
+				INFOPLIST_FILE = "FilmDiaryTests/FilmDiaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		00D2C3351723C15A00473AFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FilmDiary.app/FilmDiary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FilmDiary/FilmDiary-Prefix.pch";
+				INFOPLIST_FILE = "FilmDiaryTests/FilmDiaryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00D2C2EA1723C15A00473AFC /* Build configuration list for PBXProject "FilmDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D2C32E1723C15A00473AFC /* Debug */,
+				00D2C32F1723C15A00473AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00D2C3301723C15A00473AFC /* Build configuration list for PBXNativeTarget "FilmDiary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D2C3311723C15A00473AFC /* Debug */,
+				00D2C3321723C15A00473AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		00D2C3331723C15A00473AFC /* Build configuration list for PBXNativeTarget "FilmDiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00D2C3341723C15A00473AFC /* Debug */,
+				00D2C3351723C15A00473AFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00D2C2E71723C15A00473AFC /* Project object */;
+}
