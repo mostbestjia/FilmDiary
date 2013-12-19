@@ -7,12 +7,32 @@
 //
 
 #import "AppDelegate.h"
+#import <MediaPlayer/MediaPlayer.h>
+#import "util.h"
+#import "DataViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone){
+        if(IS_IPHONE5){
+            UIViewController* viewController = [[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone5"
+                                                                          bundle:nil] instantiateViewControllerWithIdentifier:@"DataViewController"];
+            
+            UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:viewController];
+            self.window.rootViewController = navController;
+        }
+        else
+        {
+            UIViewController* viewController = [[UIStoryboard storyboardWithName:@"MainStoryboard_iPhone"
+                                                                          bundle:nil] instantiateViewControllerWithIdentifier:@"DataViewController"];
+            
+            UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:viewController];
+            self.window.rootViewController = navController;
+        }
+    }
+    
     return YES;
 }
 
@@ -20,6 +40,11 @@
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return UIInterfaceOrientationMaskPortrait;
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
