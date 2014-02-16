@@ -324,6 +324,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushHelp:" destination="Dvb-Rn-YtC" eventType="touchUpInside" id="wrm-U8-hAc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="kFb-D3-lCE">
                                 <rect key="frame" x="54" y="79" width="68" height="33"/>
@@ -354,6 +357,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pushAboutUs:" destination="Dvb-Rn-YtC" eventType="touchUpInside" id="Gii-nn-XcU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="我来投票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eXe-WB-Qau">
                                 <rect key="frame" x="125" y="531" width="70" height="21"/>
@@ -2674,7 +2680,7 @@
         <image name="hub_logo.png" width="79" height="91"/>
         <image name="loading.png" width="200" height="173"/>
         <image name="login_5.png" width="640" height="1098"/>
-        <image name="namecard_placeholder.png" width="520" height="520"/>
+        <image name="namecard_placeholder.png" width="260" height="260"/>
         <image name="preview_background.png" width="580" height="580"/>
         <image name="preview_background_long.png" width="640" height="1187"/>
         <image name="ranking_firstrun_5.png" width="640" height="1010"/>

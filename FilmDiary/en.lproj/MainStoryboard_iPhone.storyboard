@@ -2684,7 +2684,7 @@
         <image name="hub_logo.png" width="79" height="91"/>
         <image name="loading.png" width="200" height="173"/>
         <image name="login.png" width="640" height="922"/>
-        <image name="namecard_placeholder.png" width="520" height="520"/>
+        <image name="namecard_placeholder.png" width="260" height="260"/>
         <image name="preview_background.png" width="580" height="580"/>
         <image name="preview_background_long.png" width="640" height="1187"/>
         <image name="ranking_firstrun.png" width="640" height="834"/>

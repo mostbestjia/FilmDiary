@@ -24,8 +24,20 @@
 
 
 @implementation HubViewController
-NSTimer *timer;
-BOOL animated;
+static NSTimer *timer;
+static BOOL animated;
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
+    if (timer == nil)
+    {
+        timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(transitionPhotos) userInfo:nil repeats:YES];
+    }
+    self.TeamLogo.alpha = 0.5;
+    animated = NO;
+}
 
 - (void)viewDidLoad
 {
@@ -36,24 +48,20 @@ BOOL animated;
         [self setAutomaticallyAdjustsScrollViewInsets:NO];
         self.edgesForExtendedLayout=NO;
     }
-    
+
     self.getRankingService = [AzureUserInterface defaultService];
-//    self.ChaKanYiWang.backgroundColor = [UIColor clearColor];
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     [self.ShaiTuBang setBackgroundImage:[UIImage imageNamed:@"shai_big.png"] forState:UIControlStateNormal];
     [self.JingDianShouCang setBackgroundImage:[UIImage imageNamed:@"feature_big.png"] forState:UIControlStateNormal];
     [self.WoLaiDianPing setBackgroundImage:[UIImage imageNamed:@"env_big.png"] forState:UIControlStateNormal];
     [self.ChuangZuoJinTian setBackgroundImage:[UIImage imageNamed:@"imp_big.png"] forState:UIControlStateNormal];
     [self.ChaKanYiWang setBackgroundImage:[UIImage imageNamed:@"his_big.png"] forState:UIControlStateNormal];
     
-    self.TeamLogo.alpha = 0.5;
-    animated = NO;
-    timer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(transitionPhotos) userInfo:nil repeats:YES];
     UINavigationController *navController = [[UINavigationController alloc]init];
     self.view.window.rootViewController = navController;
 }
 
 -(void)transitionPhotos{
+    NSLog(@"%d-->%f", animated, self.TeamLogo.alpha);
     if (self.TeamLogo.alpha < 1 && animated == NO)
     {
         self.TeamLogo.alpha += 0.02;
@@ -65,6 +73,12 @@ BOOL animated;
     if (animated && self.TeamLogo.alpha > 0.5)
     {
         self.TeamLogo.alpha -= 0.02;
+    }
+    if (animated && self.TeamLogo.alpha < 0.5)
+    {
+        [timer invalidate];
+        timer = nil;
+        animated = NO;
     }
 }
 
