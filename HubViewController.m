@@ -61,7 +61,7 @@ static BOOL animated;
 }
 
 -(void)transitionPhotos{
-    NSLog(@"%d-->%f", animated, self.TeamLogo.alpha);
+//    NSLog(@"%d-->%f", animated, self.TeamLogo.alpha);
     if (self.TeamLogo.alpha < 1 && animated == NO)
     {
         self.TeamLogo.alpha += 0.02;
@@ -74,7 +74,7 @@ static BOOL animated;
     {
         self.TeamLogo.alpha -= 0.02;
     }
-    if (animated && self.TeamLogo.alpha < 0.5)
+    if (animated && self.TeamLogo.alpha <= 0.5)
     {
         [timer invalidate];
         timer = nil;

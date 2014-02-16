@@ -969,8 +969,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu (8M5RKZCSE9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu (8M5RKZCSE9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -985,8 +985,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "1EB31655-1F7E-4F70-929E-396092BFB9E9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1EB31655-1F7E-4F70-929E-396092BFB9E9";
+				PROVISIONING_PROFILE = "57FEBDCB-6A63-4079-806E-10C631BAB151";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "57FEBDCB-6A63-4079-806E-10C631BAB151";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1005,8 +1005,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu (8M5RKZCSE9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu (8M5RKZCSE9)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -1015,8 +1015,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "1EB31655-1F7E-4F70-929E-396092BFB9E9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "1EB31655-1F7E-4F70-929E-396092BFB9E9";
+				PROVISIONING_PROFILE = "57FEBDCB-6A63-4079-806E-10C631BAB151";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "57FEBDCB-6A63-4079-806E-10C631BAB151";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1026,8 +1026,8 @@
 		00D2C3311723C15A00473AFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1038,7 +1038,7 @@
 				INFOPLIST_FILE = "FilmDiary/FilmDiary-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "胶片日记";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "57FEBDCB-6A63-4079-806E-10C631BAB151";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1047,8 +1047,8 @@
 		00D2C3321723C15A00473AFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Yingjia Liu  (8M5RKZCSE9)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -1059,7 +1059,7 @@
 				INFOPLIST_FILE = "FilmDiary/FilmDiary-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "胶片日记";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "57FEBDCB-6A63-4079-806E-10C631BAB151";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
